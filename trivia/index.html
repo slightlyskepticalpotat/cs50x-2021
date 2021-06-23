@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- Correct answer is Blue. -->
+                <h3>Best colour?</h3>
+                <button id="red">Red</button>
+                <button id="green">Green</button>
+                <button id="blue">Blue</button>
+                <p id="response"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>Why is that?</h3>
+                <form>
+                    <input id="input_text" type="text">
+                </form>
+                <br>
+                <button id="respond_text">Submit</button>
+                <br>
+                <p id="response_text"></p>
+            </div>
+
+        </div>
+    </body>
+    <script src="scripts.js"></script>
+</html>

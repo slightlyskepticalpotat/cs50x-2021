@@ -1,0 +1,136 @@
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+.navbar-dark, .navbar-nav, .nav-link, .navbar-brand, h1, h2, h3, h4, h5, h6 {
+    font-family: "Ubuntu", sans-serif;
+}
+
+.page-header {
+    padding-top: 1.5em;
+}
+
+.copyright-text {
+    font-size: 0.75em;
+}
+
+.resume-page {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+.card-image {
+    height: 256px;
+    object-fit: contain;
+    transition: transform .3s;
+}
+
+.card-image:hover {
+    transform: scale(1.1);
+}
+
+.blog-card-img {
+    max-height: 192px;
+    object-fit: cover;
+}
+
+.blog-content-img-big {
+    max-height: 1024px;
+    max-width: 1024px;
+    object-fit: cover;
+}
+
+.blog-content-img-med {
+    max-height: 512px;
+    max-width: 512px;
+    object-fit: cover;
+}
+
+.blog-content-img-small {
+    max-height: 256px;
+    max-width: 256px;
+    object-fit: cover;
+}
+
+/* blinking class for underscores and the like */
+.blinking {
+    animation: 1.2s blink step-end infinite;
+    -webkit-animation: 1.2s blink step-end infinite;
+    -moz-animation: 1.2s blink step-end infinite;
+    -ms-animation: 1.2s blink step-end infinite;
+    -o-animation: 1.2s blink step-end infinite;
+}
+
+@keyframes "blink" {
+    50% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes "blink" {
+    50% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+@-ms-keyframes "blink" {
+    50% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes "blink" {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* make bootstrap buttons and links look better */
+.icon, .btn {
+    color: slateblue;
+}
+
+.icon:hover {
+    color: royalblue;
+}
+
+.btn:hover {
+    border-color: royalblue;
+    background-color: royalblue;
+}
+
+.btn-outline-primary {
+    border: 4px solid;
+}
+
+.form-control-file {
+    border: 4px solid;
+    border-color: slateblue;
+}
+
+/* add bottom border to nav elements */
+.nav-link.active {
+    border-bottom: 4px solid;
+    border-color: white;
+}
+
+.nav-link:hover:not(.active) {
+    border-bottom: 4px solid;
+    border-color: rgba(255,255,255,.55);
+}
+
+.navbar-brand {
+    border-bottom: 4px solid;
+    border-color: slateblue;
+}
+
+.navbar-brand:hover {
+    border-color: royalblue;
+}

@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Main
+{% endblock %}
+
+{% block main %}
+    {% if data %}
+    <table>
+        <tr>
+            <th>Stock</th>
+            <th>Shares</th>
+            <th>Price</th>
+            <th>Value</th>
+            <th>Time</th>
+        </tr>
+        {% for row in data %}
+            <tr>
+                <td>{{ row.symbol }}</td>
+                <td>{{ row.shares }}</td>
+                <td>{{ row.price | usd}}</td>
+                <td>{{ (row.shares * row.price) | usd }}</td>
+                <td>{{ row.time }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    {% endif %}
+    {{ cash | usd }}
+    {{ total | usd }}
+{% endblock %}

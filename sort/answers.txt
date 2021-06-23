@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: It sorts the sorted50000 file faster than sort3, since we know sort2 is merge sort.
+
+sort2 uses: merge sort
+
+How do you know?: When sorting the random50000 file, it is the fastest by far. However, it doesn't speed up on other same-sized files.
+
+sort3 uses: selection sort
+
+How do you know?: It is the slowest for all of the files.
